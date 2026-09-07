@@ -14,7 +14,7 @@ const Work = ({ navigate, weatherImg, foodImg, veloraImg, mernAuthImg }) => {
                 </div>
 
                 <button onClick={() => navigate("/weather-project")} className="view-project">
-                View Project >
+                View Project 
                 </button>
 
                 </div>
@@ -29,7 +29,7 @@ const Work = ({ navigate, weatherImg, foodImg, veloraImg, mernAuthImg }) => {
                 <button>Responsive UI</button>
                 <button>Web Development</button>
                 </div>                                                                                                                                        <button onClick={() => navigate("/swiftdine-project")} className="view-project">
-                View Project >
+                View Project 
                 </button>
                 </div>
 
@@ -40,7 +40,7 @@ const Work = ({ navigate, weatherImg, foodImg, veloraImg, mernAuthImg }) => {
                                                                                        <div className="tags">                                                 <button>Web design</button>                                            <button>React Development</button>
                 <button>UI/UX</button>                                                 <button>Responsive Design</button>                                     </div>
                 <button onClick={() => navigate("/velora-project")} className="view-project">
-                View Project >
+                View Project 
                 </button>
 
                 </div>
@@ -59,7 +59,7 @@ const Work = ({ navigate, weatherImg, foodImg, veloraImg, mernAuthImg }) => {
 		</div>
 		
 		<button onClick={() => navigate("/auth-kit-project")} className="view-project">
-		View Project >
+		View Project 
 		</button>
 
 		</div>
