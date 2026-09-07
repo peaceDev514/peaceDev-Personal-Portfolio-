@@ -28,7 +28,7 @@ const Contact = ({ name, setName, email, setEmail, message, setMessage, loading,
 	}
 	}catch(err){
 		setLoading(false);
-		toast.error(err);
+		toast.error(err.message);
 	}
 	};
 	
