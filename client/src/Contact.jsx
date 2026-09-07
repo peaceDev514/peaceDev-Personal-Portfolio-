@@ -7,7 +7,7 @@ const Contact = ({ name, setName, email, setEmail, message, setMessage, loading,
 	e.preventDefault();
 	setLoading(true);
 	try{
-	const res = await fetch("https://peace-dev-server.vercel.app/", {
+	const res = await fetch("https://peace-dev-server.vercel.app/api/contact", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
