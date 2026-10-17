@@ -24,7 +24,12 @@ import Weather from './projects/Weather';
 import SwiftDine from './projects/SwiftDine';
 import Velora from './projects/Velora';
 import Mern from './projects/Mern';
+import TheMix from './projects/The-Mix';
 import Header from './Header';
+
+import ogo from "./assets/sample.jpg";
+
+import theMixImg from "./assets/the-mix-img.jpg"
 
 import { Toaster } from 'react-hot-toast';
 
@@ -49,6 +54,7 @@ const App = () => {
 		<Route path="/swiftdine-project" element={<SwiftDine foodImg={foodImg} />} />
 		<Route path="/velora-project" element={<Velora veloraImg={veloraImg} />} />
 		<Route path="/auth-kit-project" element={<Mern mernAuthImg={mernAuthImg} />} />
+		<Route path="/the-mix-project" element={<TheMix theMixImg={theMixImg} />} />
 
 		<Route path="/" element={
 
@@ -58,14 +64,26 @@ const App = () => {
 		menuOpen={menuOpen}
 		setMenuOpen={setMenuOpen}
 		/>
-		<section className={menuOpen ? "intro-gone" : "intro"} id="home">
-		<h1>
-		PEACE OGUNLEYE
-		</h1>
+		
+		<section
+		className={menuOpen ? "intro-gone" : "intro"}
+		id="home"
+		>
+  <div className="intro-content">
+    <h1>
+      <span>PEACE OGUNLEYE</span>
+    </h1>
 
-		<p>Hi, I’m Peace, a Full-Stack Developer building modern web applications and digital experiences that solve real problems — working with clients and teams worldwide.</p>
+    <p>
+      Hi, I’m Peace, a Full-Stack Developer building
+      modern websites, responsive interfaces, and web
+      applications that solve real problems.
+    </p>
+  </div>
 
-		</section>
+  
+</section>
+
 
 		<Work 
 		navigate={navigate}
@@ -74,6 +92,7 @@ const App = () => {
 		veloraImg={veloraImg}
 		mernAuthImg={mernAuthImg}
 		Routes={Routes}
+		theMixImg={theMixImg}
 		/>
 
 		<About 
